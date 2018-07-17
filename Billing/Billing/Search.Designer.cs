@@ -30,7 +30,7 @@
         {
             this.lblUsername = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.idCard = new System.Windows.Forms.TextBox();
             this.btnOK = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -55,13 +55,13 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "汇总表";
             // 
-            // textBox1
+            // idCard
             // 
-            this.textBox1.Font = new System.Drawing.Font("宋体", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox1.Location = new System.Drawing.Point(479, 173);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(279, 39);
-            this.textBox1.TabIndex = 4;
+            this.idCard.Font = new System.Drawing.Font("宋体", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.idCard.Location = new System.Drawing.Point(479, 173);
+            this.idCard.Name = "idCard";
+            this.idCard.Size = new System.Drawing.Size(279, 39);
+            this.idCard.TabIndex = 4;
             // 
             // btnOK
             // 
@@ -94,7 +94,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnOK);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.idCard);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblUsername);
             this.Name = "FrmSearch";
@@ -109,7 +109,7 @@
 
         private System.Windows.Forms.Label lblUsername;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox idCard;
         private System.Windows.Forms.Button btnOK;
         private System.Windows.Forms.Button btnCancel;
     }

@@ -17,8 +17,10 @@ namespace Billing
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-    
+
             FrmLogin login = new FrmLogin();
+
+            /*
             SQLiteConnection m_dbConnection;
             string path = @"C:\sqlite\data\data.db";
             m_dbConnection = new SQLiteConnection("Data Source=" + path + "; Version=3;");
@@ -30,12 +32,13 @@ namespace Billing
             while (reader.Read())
             {
                 Console.WriteLine("Name: " + reader["name"]);
-            }
-                
+            }*/
+
             if (login.ShowDialog() == DialogResult.OK)
             {
-                Application.Run(new FrmSearch(login.username));
+                Application.Run(new FrmSearch(login.userId, login.username));
             }
+            
         }
     }
 }
